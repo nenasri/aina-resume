@@ -1,0 +1,66 @@
+/* Section Styling */
+#videos {
+  background-color: #e9e6e4;
+  padding: 50px;
+}
+
+/* Heading Styling */
+.video-heading {
+  font-size: 50px;
+  color: #735e59;
+  font-family: "Brown Sugar", serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Video Container Styling */
+.video-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 videos per row */
+  gap: 30px; /* Spacing between grid items */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Video Item Styling */
+.video-item {
+  text-align: center;
+}
+
+/* Video Styling */
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Caption Styling */
+.video-caption {
+  font-size: 18px;
+  font-weight: bold;
+  color: #735e59;
+  margin: 10px 0 5px;
+}
+
+/* Content Styling */
+.video-content {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .video-container {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 2 videos per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .video-container {
+    grid-template-columns: 1fr; /* 1 video per row on very small screens */
+  }
+}
